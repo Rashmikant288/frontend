@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS animation</title>
+	<style type="text/css">
+	div#progressBar {
+		height: 10px;
+		width: 100px;
+		border-radius: 100px;
+		background-color: red;
+		animation-name: test;
+		animation-duration: 5s;
+		animation-delay: 2s;
+		animation-iteration-count: 3;
+
+	}
+
+	@keyframes test {
+		from {background-color: red;width: 100px;}
+		to {background-color: yellow;width: 300px;}
+	}
+	.loader {
+		border: 16px solid white;
+		border-top: 16px solid blue;
+		border-bottom: 16px solid blue;
+		border-radius: 50%;
+		width: 120px;
+		height: 120px;
+		animation: loading .5s linear infinite;
+	}
+	@keyframes loading {
+		0% {transform: rotate(0deg);}
+		100% {transform: rotate(360deg);}
+	}
+	</style>
+</head>
+<body>
+<center><h1>CSS Animation: @Keyframes</h1></center>
+
+<ul>
+	<li>@keyframes</li>
+	<li>animation-name</li>
+	<li>animation-duration</li>
+	<li>animation-delay</li>
+	<li>animation-iteration-count</li>
+	<li>animation-timing-function</li>
+	<li>animation-fill-mode</li>
+	<li>animation</li>
+</ul>
+
+<div id="progressBar"></div>
+<div class="loader"></div>
+
+</body>
+</html>

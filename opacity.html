@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>opacity</title>
+	<style type="text/css">
+		.box1 {height: 100px;width: 100px;background-image: url('img/index.jpg');display: inline-block;}
+		.box2 {
+			height: 100px;width: 100px;background-image: url('img/index.jpg');background-color: green;opacity: 1;
+			transition: transform .8s; transform-style: preserve-3d;
+
+		}
+		div {position: absolute;}
+		.box2:hover
+		{
+			/*opacity: 0.5;*/
+			transform: rotateX(180deg);
+
+		}
+	</style>
+</head>
+<body>
+<div class="box1"></div>
+<div class="box2"></div>
+</body>
+</html>
