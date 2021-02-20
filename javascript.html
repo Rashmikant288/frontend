@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+</head>
+<body>
+<center>
+<input type="text" id="A1" placeholder="Enter no " ><br>
+<input type="text" id="A2" placeholder="Enter no" ><br>
+<button id="btn">Click me!</button><br>
+<input type="text" id="ans"  readonly>
+</center>
+
+<!-- <center> 
+	<h1 id="clicks">0</h1>
+</center> -->
+<script type="text/javascript">
+
+
+	function sum(){
+
+	var	A1= document.getElementById('A1').value;
+		A1=parseInt(A1);
+
+	var	A2= document.getElementById('A2').value;
+		A2=parseInt(A2);
+
+		var newCount=A1-A2;
+		document.getElementById('ans').value=newCount;
+
+	}
+
+	var btn = document.getElementById('btn');
+	btn.addEventListener('click',sum);
+
+	/*function countClicks() {
+		var current = document.getElementById('clicks').innerHTML;
+		current = parseInt(current);		
+		var newCount = current + 1;
+		document.getElementById('clicks').innerHTML = newCount;
+
+
+	}
+	document.addEventListener('click', countClicks);*/
+
+</script>
+</body>
+</html>
